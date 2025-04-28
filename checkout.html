@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="checkooutStyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header-container"></div>
+
+    <div class="body-container">    
+        <h2>Checkout</h2>
+
+        <div class="checkout-content">
+            <div class="checkout-left">
+                <h3>Shipping Address</h3>
+                <form id="billing-form">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                    <p class="note">You can create an account after checkout.</p>
+            
+                    <label for="first-name">First Name *</label>
+                    <input type="text" id="first-name" name="first-name" required>
+            
+                    <label for="last-name">Last Name *</label>
+                    <input type="text" id="last-name" name="last-name" required>
+            
+                    <label for="company">Company</label>
+                    <input type="text" id="company" name="company">
+            
+                    <label for="address">Street Address *</label>
+                    <input type="text" id="address" name="address" required>
+            
+                    <label for="city">City *</label>
+                    <input type="text" id="city" name="city" required>
+            
+                    <label for="state">State/Province *</label>
+                    <select id="state" name="state" required>
+                        <option value="Md">Moldova</option>
+                        <option value="Ro">Romania</option>
+                    </select>
+
+                    <hr>
+            
+                    <div class="shipping-methods">
+                        <div class="shipping-options">
+                            <div class="option">
+                                <input type="radio" id="standard" name="shipping" value="standard" checked>
+                                <label for="standard">
+                                    <div class="option-details">
+                                        <div class="option-header">
+                                            <span class="option-title">Standard Rate</span>
+                                            <span class="option-price">$21.00</span>
+                                        </div>
+                                        <div class="option-description">
+                                            Price may vary depending on the item/destination. Shop Staff will contact you.
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="pickup" name="shipping" value="pickup">
+                                <label for="pickup">
+                                    <div class="option-details">
+                                        <div class="option-header">
+                                            <span class="option-title">Pickup from store</span>
+                                            <span class="option-price">$0.00</span>
+                                        </div>
+                                        <div class="option-description">
+                                            1234 Street Address City Address, 1234
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <button type="submit">Next</button>
+                </form>
+            </div>
+            <div class="checkout-right">
+                <h3>Order Summary</h3>
+                <hr>
+                <div class="order-items">
+                    <div class="order-item">
+                        <img src="product-image.jpg" alt="Product">
+                        <div class="item-details">
+                            <p>MSI MEG Trident X 10SD-1024AU Intel i7 10700K, 2070 SUPER...</p>
+                            <p>Qty: 1 $3,799.00</p>
+                        </div>
+                    </div>
+                    <div class="order-item">
+                        <img src="product-image.jpg" alt="Product">
+                        <div class="item-details">
+                            <p>MSI MEG Trident X 10SD-1024AU Intel i7 10700K, 2070 SUPER...</p>
+                            <p>Qty: 1 $3,799.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-container"></div>
+
+    <script src="checkoutScript.js"></script>
+    <script src="loadHeaderFooter.js"></script>
+    <script src="setupTheme.js"></script>
+    <script src="setupSearch.js"></script>
+
+</body>
+</html>

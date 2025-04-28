@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header-container"></div>
+
+    <section class="body-container">
+        <h1>Shopping Cart</h1>
+        <div class="cart-content">
+            <div class="cart-items">
+                <div class="cart-header">
+                    <span class="header-image"></span>
+                    <span class="header-item">Item</span>
+                    <span class="header-price">Price</span>
+                    <span class="header-quantity">Qty</span>
+                    <span class="header-subtotal">Subtotal</span>
+                    <span class="header-actions"></span>
+                </div>
+            </div>
+            <div class="cart-summary">
+                <h2>Order Summary</h2>
+                <div class="summary-details">
+                </div>
+                <div class="btns-checkout">
+                    <a href="checkout.html"><button class="btn checkout-btn">Proceed to Checkout</button></a>
+                    <button class="btn checkout-btn-paypal">Check out with <span class="paypal-logo"><img src="Images/Payments/Paypal-checkout.png" alt=""></span></button>
+                    <button class="btn checkout-btn-multiple-adress">Check Out with Multiple Addresses</button>
+                </div>
+            </div>
+            <div class="cart-bottom">
+                <div class="cart-left">
+                    <button class="btn continue-shopping">Continue Shopping</button>
+                    <button class="btn clear-cart">Clear Shopping Cart</button>    
+                </div>
+                <div class="cart-right">
+                    <button class="btn update-cart">Update Shopping Cart</button>    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+
+    <script src="cartScript.js"></script>
+    <script src="loadHeaderFooter.js"></script>
+    <script src="setupTheme.js"></script>
+    <script src="setupSearch.js"></script>
+</body>
+</html>

@@ -1,0 +1,242 @@
+:root {
+    --bg-primary: #FFFFFF;
+    --bg-secondary: #F5F7FF;
+    --text-primary: #000000;
+    --text-secondary: #666666;
+    --text-muted: #A2A6B0;
+    --accent-primary: #0156FF;
+    --accent-hover: #0146d5;
+    --border-primary: #000000;
+    --border-secondary: #A2A6B0;
+    --button-bg: #FFFFFF;
+    --button-text: #0156FF;
+    --button-border: #0156FF;
+    --footer-bg: #020203;
+    --footer-text: #FFFFFF;
+}
+
+[data-theme="dark"] {
+    --bg-primary: #1A1A1A;
+    --bg-secondary: #2C2C2C;
+    --text-primary: #FFFFFF;
+    --text-secondary: #B3B3B3;
+    --text-muted: #808080;
+    --accent-primary: #4D8CFF;
+    --accent-hover: #3B78E6;
+    --border-primary: #4A4A4A;
+    --border-secondary: #666666;
+    --button-bg: #2C2C2C;
+    --button-text: #4D8CFF;
+    --button-border: #4D8CFF;
+    --footer-bg: #0F0F0F;
+    --footer-text: #E6E6E6;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.body-container h2 {
+    margin: 1em 0 2em;
+}
+
+.body-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 100px;
+}
+
+.checkout-content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    height: auto;
+}
+
+.checkout-left {
+    width: 60%;
+    height: auto;
+}
+
+.checkout-right {
+    width: 40%; 
+    height: auto;
+    word-break: break-word;
+}
+
+.checkout-left h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+#billing-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#billing-form hr {
+    margin-top: 1em;
+}
+
+#billing-form label {
+    font-size: 1em;
+    font-weight: 500;
+    margin-top: 0.5em;
+}
+
+#billing-form input:not([type="radio"]),
+#billing-form select {
+    width: 100%;
+    background-color: var(--bg-secondary);
+    max-width: 500px;
+    padding: 10px;
+    border: 1px solid var(--border-primary);
+    border-radius: 4px;
+    font-size: 1em;
+    color: var(--text-primary);
+}
+
+#billing-form button {
+    background-color: #0156FF;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 210px;
+    font-size: 1em;
+    height: 50px;
+    margin-top: 10px;
+}
+
+#billing-form button:hover {
+    background-color: #0056b3;
+}
+
+.checkout-right {
+    background-color: var(--bg-secondary);
+    padding: 20px;
+    border-radius: 8px;
+    height: auto;
+}
+
+.checkout-right hr {
+    margin-bottom: 1em;
+}
+
+.checkout-right h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.order-items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.order-items p {
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.order-item {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.order-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.item-details p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.item-details p:first-child {
+    font-weight: 500;
+}
+
+.item-details p:last-child {
+    color: var(--text-secondary);
+}
+
+.shipping-methods {
+    margin-top: 20px;
+    width: 600px;
+}
+
+
+.shipping-options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    padding: 0;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    width: 100%;
+}
+
+.option input[type="radio"] {
+    margin: 5px 0 0 0;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.option label {
+    flex: 1;
+    margin: 0;
+    font-size: 1em;
+}
+
+.option-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.option-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.option-title {
+    font-weight:bold;   
+}
+
+
+.option-price {
+    font-weight: bold;
+    color: var(--text-primary);
+}
+
+.option-description {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 5px;
+}
+
+.summary-price{
+    font-weight: bold;
+    color: var(--text-primary);
+}
+
